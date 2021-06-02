@@ -9,6 +9,9 @@ const autoPrefixer  = require('gulp-autoprefixer');
 const imagemin      = require('gulp-imagemin');
 const del           = require('del');
 
+
+
+
 function browsersync() {
     browserSync.init({
         server: {
@@ -38,11 +41,17 @@ function images() {
         .pipe(dest('dist/images'))
 }
 
-function scripts() {
-    return src([
+function scripts(){ 
+    return src([   
         'node_modules/jquery/dist/jquery.js',
-        'app/js/main.js'
-    ])
+        'app/js/main.js',
+        "node_modules/slick-carousel/slick/slick.min.js",
+        'node_modules/slick-carousel/slick/slick.js',
+        'app/js/jquery.fancybox.js'
+        
+        
+       
+          ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(dest('app/js'))
@@ -51,8 +60,13 @@ function scripts() {
 
 
 
-function styles() {
-    return src('app/scss/style.scss')
+function styles(){
+    return src('app/scss/style.scss',
+    //    'app/css/slick.css',
+    //    'app/css/slick-theme.css'
+    'node_modules/normalize.css/normalize.css'
+    
+    )
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoPrefixer({
@@ -63,7 +77,7 @@ function styles() {
         .pipe(browserSync.stream());
 }
 
-function build() {
+function build(){
     return src(['app/css/style.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
