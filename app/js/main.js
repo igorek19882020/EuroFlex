@@ -22,7 +22,11 @@
 
     });
 
-
+    $(document).ready(function(){  //дожидаемся загрузки страницы
+      $('#btn1').on("click", function(){  //вешаем событие на клик по кнопке id="btn1"
+          $('#decision__items').toggle(); //включает/выключает элемент id="text"
+      });
+  });
 
 
 })
