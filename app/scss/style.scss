@@ -234,8 +234,7 @@ body {
 //end advantages
 
 //start production
-.production {
-}
+
 .production__title {
     font-family: "Roboto";
     font-size: 32px;
@@ -493,3 +492,133 @@ button.slick-next.slick-arrow {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.24);
 }
 //end decision
+
+//start manufacture
+.manufacture {
+    background-image: url(../images/content/manufacture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1032px;
+    width: 100%;
+}
+.manufacture__inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.manufacture__title {
+    text-align: center;
+    //styleName: medium_32;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    color: #646566;
+}
+.manufacture__text {
+    @include f400;
+    color: #646566;
+    font-size: 16px;
+    line-height: 25px;
+
+    h4 {
+        margin-top: 20px;
+    }
+}
+.manufacture__link {
+    @include f700;
+    font-size: 16px;
+    // text-decoration: underline;
+    color: #ff5c5c;
+    margin-top: 10px;
+
+    border-bottom: 0.25px solid #ff5c5c;
+}
+
+.manufacture__numbers {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.manufacture__item {
+    max-width: 200px;
+    min-height: 130px;
+    &-title {
+        color: #ff5c5c;
+        @include f700;
+        font-size: 50px;
+        span {
+            font-size: 25px;
+        }
+    }
+    &-text {
+        @include f400;
+        font-size: 14px;
+        color: #646566;
+    }
+}
+
+.manufacture__slider-inner {
+    height: 220px;
+    padding-top: 60px;
+    display: flex;
+    position: relative;
+    .slick-slide + .slick-slide {
+        padding-left: 20px;
+    }
+
+    .slick-prev.slick-arrow {
+        position: absolute;
+        left: -100px;
+    }
+    .slick-next.slick-arrow {
+        position: absolute;
+        left: 1190px;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-left: 20px;
+        }
+
+        li.slick-active button {
+            background-image: url(../images/content/hoverdot.svg);
+        }
+
+        li button {
+            color: #edeff2;
+            background-image: url(../images/content/dot.svg);
+            height: 10px;
+            width: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 0px;
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            // &:hover{
+            //     background-image: url(../images/content/hoverdot.svg);
+            // }
+        }
+    }
+}
+// cursor: pointer;
+// background-color: transparent;
+
+.manufacture__slider-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 107px;
+    min-width: 180px;
+}
+
+.manufacture__slider-inner.slick-initialized.slick-slider.slick-dotted {
+    margin: 0;
+}
+
+//end manufacture

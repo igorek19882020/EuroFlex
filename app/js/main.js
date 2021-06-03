@@ -28,5 +28,19 @@
       });
   });
 
+  $('.manufacture__slider-inner').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    speed: 500,
+    dots: true,
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+  });
+
+
+
+
 
 })
