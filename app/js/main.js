@@ -39,8 +39,7 @@
     nextArrow: '<button type="button" class="slick-next"></button>',
   });
 
-
-
+ 
 
 
 })

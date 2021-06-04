@@ -565,7 +565,7 @@ button.slick-next.slick-arrow {
     display: flex;
     position: relative;
     .slick-slide + .slick-slide {
-        padding-left: 20px;
+        padding-left: 22px;
     }
 
     .slick-prev.slick-arrow {
@@ -622,3 +622,51 @@ button.slick-next.slick-arrow {
 }
 
 //end manufacture
+
+//start advantages
+.advantage__inner {
+    position: relative;
+    .blank {
+        max-width: 430px;
+        height: 513px;
+        box-shadow: 00px 2px 4px 0px #0000003d;
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        top: 680px;
+    }
+}
+
+.advantages__title {
+    padding-top: 100px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 32px;
+    color: #646566;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+.advantages__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 80px;
+    margin-bottom: 115px;
+}
+.advantages__item {
+    max-width: 250px;
+    margin-right: 20px;
+    padding: 10px;
+    &-img {
+        margin-bottom: 19px;
+    }
+
+    &-text {
+        color: #444444;
+        @include f400;
+        line-height: 24px;
+    }
+}
+//end advantages
