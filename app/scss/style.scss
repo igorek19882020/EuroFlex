@@ -16,7 +16,7 @@ body {
     min-height: 608px;
     background-position: center;
     background-repeat: no-repeat;
-    //  background-size: cover;
+    background-size: cover;
 }
 
 .header__inner {
@@ -498,6 +498,7 @@ button.slick-next.slick-arrow {
     background-image: url(../images/content/manufacture.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     min-height: 1032px;
     width: 100%;
 }
@@ -606,8 +607,7 @@ button.slick-next.slick-arrow {
         }
     }
 }
-// cursor: pointer;
-// background-color: transparent;
+
 
 .manufacture__slider-item {
     background-size: cover;
@@ -670,3 +670,79 @@ button.slick-next.slick-arrow {
     }
 }
 //end advantages
+
+//start bottom
+.bottom {
+    background-image: url(../images/content/bottom.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bottom__inner {
+    min-height: 528px;
+    padding-top: 83px;
+}
+.bottom__title {
+    text-transform: uppercase;
+
+    font-family: "Roboto";
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 37px;
+    max-width: 580px;
+}
+
+.bottom__checkbox {
+    form {
+        margin-top: 80px;
+        margin-bottom: 118px;
+    }
+    .checkbox__left {
+        margin-right: 42px;
+        input {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.checkbox__form {
+    display: flex;
+
+    label {
+        display: block;
+        input {
+            width: 18px;
+            height: 18px;
+            margin-right: 20px;
+        }
+        a {
+            @include f400;
+
+            font-size: 16px;
+            padding-top: 50px;
+            color: #edeff2;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+//end bottom
+
+
+//start footer
+
+.footer {
+    background-image: url(../images/content/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__inner {
+    padding: 54px 0px;
+    width: 780px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4f4f4f;
+}
+//end footer
